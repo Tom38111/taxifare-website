@@ -62,7 +62,7 @@ dict = dict(
 3. Let's call our API using the `requests` package...'''
 st.markdown(dict)
 
-url = https://taxifare.lewagon.ai/predict?dict
+url = f'https://taxifare.lewagon.ai/predict?{dict}'
 
 reponse = requests.get(url)
 
