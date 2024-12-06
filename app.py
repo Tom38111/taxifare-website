@@ -28,7 +28,7 @@ url = 'https://taxifare.lewagon.ai/predict'
 
 if st.button('predict fare'):
     if all([date, time,pickup_longitude, pickup_latitude, dropoff_longitude, dropoff_latitude,passenger_count ]):
-        params = {'date':date, 'time':time, 'pickup_longitude' :float(pickup_longitude),'pickup_latitude' :float(pickup_latitude),
+        params = {'pickup_datetime':f'{date}&{time}', 'pickup_longitude' :float(pickup_longitude),'pickup_latitude' :float(pickup_latitude),
                   'dropoff_longitude' :float(dropoff_longitude),'dropoff_latitude' :float(dropoff_latitude),
                   'passenger_count' : int(passenger_count)}
 
