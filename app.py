@@ -18,8 +18,6 @@ Either as with the title by just creating a string (or an f-string). Or as with 
 
 date = st.date_input('Enter date')
 time = st.time_input('Enter time')
-date = date.strftime('%Y-%m-%d')
-time = time.strftime('%H:%M:%S')
 pickup_longitude = st.number_input('Enter pickup longitude')
 pickup_latitude = st.number_input('Enter pickup latitude')
 dropoff_longitude = st.number_input('Enter dropoff longitude')
@@ -30,7 +28,7 @@ url = 'https://taxifare.lewagon.ai/predict'
 
 if st.button('predict fare'):
     if all([date, time,pickup_longitude, pickup_latitude, dropoff_longitude, dropoff_latitude,passenger_count ]):
-        params = {'pickup_datetime':f'{date}&{time}', 'pickup_longitude' :float(pickup_longitude),'pickup_latitude' :float(pickup_latitude),
+        params = {'pickup_datetime':f'{date}{time}', 'pickup_longitude' :float(pickup_longitude),'pickup_latitude' :float(pickup_latitude),
                   'dropoff_longitude' :float(dropoff_longitude),'dropoff_latitude' :float(dropoff_latitude),
                   'passenger_count' : int(passenger_count)}
 
