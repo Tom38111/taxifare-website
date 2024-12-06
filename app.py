@@ -57,7 +57,7 @@ dict = dict(
         dropoff_longitude=[dropoff_longitude],
         dropoff_latitude=[dropoff_latitude],
         passenger_count=[passenger_count],
-    ))
+    )
 '''
 3. Let's call our API using the `requests` package...'''
 st.markdown(dict)
