@@ -18,8 +18,8 @@ Either as with the title by just creating a string (or an f-string). Or as with 
 
 date = st.date_input('Enter date')
 time = st.time_input('Enter time')
-date = parse(date).strftime('%Y-%m-%d')
-time = parse(time).strftime('%H-%M-%S')
+date = date.strftime('%Y-%m-%d')
+time = time.strftime('%H-%M-%S')
 pickup_longitude = st.number_input('Enter pickup longitude')
 pickup_latitude = st.number_input('Enter pickup latitude')
 dropoff_longitude = st.number_input('Enter dropoff longitude')
