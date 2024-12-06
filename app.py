@@ -38,7 +38,7 @@ if st.button('predict fare'):
         reponse.raise_for_status()
 
         prediction = response.json().get("fare", "No fare returned")
-            st.success(f"The predicted fare is: ${prediction:.2f}")
+        st.success(f"The predicted fare is: ${prediction:.2f}")
 
     except Exception as e:
         st.error(f"Error calling the API: {e}")
