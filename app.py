@@ -50,7 +50,7 @@ if url == 'https://taxifare.lewagon.ai/predict':
 2. Let's build a dictionary containing the parameters for our API...'''
 
 dict = dict(
-        pickup_datetime=[pd.Timestamp(f'{date}&{time}', tz='UTC')],
+        pickup_datetime=[pd.Timestamp(f'{date} {time}', tz='UTC')],
         pickup_longitude=[pickup_longitude],
         pickup_latitude=[pickup_latitude],
         dropoff_longitude=[dropoff_longitude],
