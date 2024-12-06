@@ -33,9 +33,9 @@ if st.button('predict fare'):
                   'passenger_count' : int(passenger_count)}
 
     try:
-        reponse = requests.get(url, params=params)
+        response = requests.get(url, params=params)
 
-        reponse.raise_for_status()
+        response.raise_for_status()
 
         prediction = response.json().get("fare", "No fare returned")
         st.success(f"The predicted fare is: ${prediction:.2f}")
