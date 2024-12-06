@@ -25,7 +25,7 @@ Either as with the title by just creating a string (or an f-string). Or as with 
 '''
 date = st.date_input(
     "Enter date",
-    datetime.date(01, 01,2024 ))
+    datetime.date(6, 12,2024 ))
 time = st.time_input('Enter time', datetime.time(8, 45))
 pickup_longitude = st.number_input('Enter pickup longitude')
 pickup_latitude = st.number_input('Enter pickup latitude')
