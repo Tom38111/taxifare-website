@@ -23,10 +23,8 @@ Either as with the title by just creating a string (or an f-string). Or as with 
 - dropoff latitude
 - passenger count
 '''
-date = st.date_input(
-    "Enter date",
-    datetime.date(6, 12,2024 ))
-time = st.time_input('Enter time', datetime.time(8, 45))
+date = st.date_input('Enter date')
+time = st.time_input('Enter time')
 pickup_longitude = st.number_input('Enter pickup longitude')
 pickup_latitude = st.number_input('Enter pickup latitude')
 dropoff_longitude = st.number_input('Enter dropoff longitude')
